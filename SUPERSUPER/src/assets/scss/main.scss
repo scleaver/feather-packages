@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+@import "global/fonts";
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -64,3 +65,9 @@
 @include motion-ui-animations;
 
 @import "sitefinity/sitefinity";
+
+@import "global/layout";
+@import "global/typography";
+
+@import "components/button";
+@import "components/cta";

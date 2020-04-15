@@ -1,0 +1,51 @@
+.l-section
+{
+    padding-top: rem-calc(25);
+    padding-bottom: rem-calc(20);
+
+    @include breakpoint(medium)
+    {
+        padding-top: rem-calc(50);
+        padding-bottom: rem-calc(28);
+    }
+    @include breakpoint(large)
+    {
+        padding-top: rem-calc(68);
+        padding-bottom: rem-calc(28);
+    }
+    @include breakpoint(xlarge)
+    {
+        padding-top: rem-calc(60);
+        padding-bottom: rem-calc(68);
+    }
+
+    &--big
+    {
+        @include breakpoint(xlarge)
+        {
+            padding-top: rem-calc(102);
+            padding-bottom: rem-calc(105);
+        }
+    }
+
+    &--pink
+    {
+        background-color: $pink;
+    }
+    &--yellow
+    {
+        background-color: $yellow;
+    }
+    &--lightpink
+    {
+        background-color: $lightpink;
+    }
+    &--red
+    {
+        background-color: get-color(primary);
+    }
+    &--blue
+    {
+        background-color: get-color(secondary);
+    }
+}

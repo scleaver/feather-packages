@@ -49,7 +49,7 @@ function clean(done) {
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
   return gulp.src(PATHS.assets)
-    .pipe(gulp.dest(PATHS.dist + '/assets'));
+    .pipe(gulp.dest(PATHS.dist));
 }
 
 // Copy page templates into finished HTML files
@@ -152,6 +152,7 @@ function images() {
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
+    //proxy: "http://stg.supersuper.com.au"
     server: PATHS.dist, port: PORT
   }, done);
 }
