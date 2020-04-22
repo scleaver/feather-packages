@@ -1,0 +1,98 @@
+.t-site-hdr
+{
+    padding-top: rem-calc(15);
+    padding-bottom: rem-calc(15);
+
+    &__logo {
+        margin-bottom: rem-calc(11);
+        display: inline-block;
+        width: rem-calc(243);
+    }
+    &__logo-cell
+    {
+        text-align: center;
+    }
+}
+
+.o-site-hdr
+{
+    background-color: $pink;
+    padding-top: rem-calc(25);
+    color: $white;
+}
+
+.o-banner
+{
+    text-align: center;
+    @include xy-grid();
+    @include flex-align(null, middle);
+
+    h1
+    {
+        font-size: rem-calc(40);
+        margin-bottom:  rem-calc(20);
+
+        strong
+        {
+            color: get-color(primary);
+        }
+        @include breakpoint(medium)
+        {
+            font-size: rem-calc(45);
+            margin-bottom: rem-calc(45);
+            text-align: left;
+        }
+        @include breakpoint(large)
+        {
+            font-size: rem-calc(60);
+        }
+        @include breakpoint(xlarge)
+        {
+            font-size: rem-calc(82);
+            margin-bottom: rem-calc(55);
+        }
+    }
+    p
+    {
+        font-size: rem-calc(16);
+
+        @include breakpoint(medium)
+        {
+            font-size: rem-calc(24);
+        }
+    }
+    &__txt-wrp
+    {
+        @include xy-cell(full);
+        margin-bottom: rem-calc(15);
+
+        *:last-child
+        {
+            margin-bottom: 0;
+        }
+
+        @include breakpoint(medium)
+        {
+            @include xy-cell(auto);
+            text-align: left;
+        }
+    }
+    &__img-wrp
+    {
+        @include xy-cell(full);
+        @include breakpoint(medium)
+        {
+            @include xy-cell(auto);
+            @include flex-align-self(bottom);
+        }
+    }
+    &__img
+    {
+        max-width: rem-calc(320);
+
+        @include breakpoint(medium)
+        {
+            max-width: 100%;
+        }
+    }
+}

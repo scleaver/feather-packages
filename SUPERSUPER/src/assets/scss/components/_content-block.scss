@@ -1,0 +1,11 @@
+.o-content-block
+{
+    max-width: rem-calc(925);
+    margin-left: auto;
+    margin-right: auto;
+
+    *:last-child
+    {
+        margin-bottom: 0;
+    }
+}

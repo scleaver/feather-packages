@@ -67,10 +67,11 @@
 
 $pink: #ebabb3;
 $lightpink: #fce8f1;
+$midpink: #f2b7bd;
 $yellow: #ffc107;
 
 $global-font-size: 87.5%;
-$global-width: rem-calc(1260);
+$global-width: rem-calc(1300);
 $global-lineheight: 1.5;
 $foundation-palette: (
   primary: #e30b13,
@@ -188,7 +189,7 @@ $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
 $paragraph-lineheight: 1.4;
-$paragraph-margin-bottom: rem-calc(26);
+$paragraph-margin-bottom: rem-calc(30);
 $paragraph-text-rendering: optimizeLegibility;
 $enable-code-inline: true;
 $anchor-color: $body-font-color;

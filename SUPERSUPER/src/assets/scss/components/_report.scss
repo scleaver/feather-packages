@@ -1,0 +1,36 @@
+.o-report {
+    @include xy-grid();
+    @include flex-align(null, middle);
+    @include breakpoint(medium) {
+        padding-top: rem-calc(14);
+    }
+
+    &__img-wrp {
+        @include show-for(medium);
+        @include xy-cell(5);
+        margin-bottom: rem-calc(-25);
+        @include flex-align-self(bottom);
+    }
+    &__txt-wrp {
+        font-family: "ObjektivMk2-Medium", sans-serif;
+        font-size: rem-calc(24);
+        margin-left: rem-calc(70);
+        margin-right: rem-calc(70);
+        text-align: center;
+
+        @include breakpoint(medium) {
+            @include xy-cell(auto);
+            text-align: left;
+        }
+    }
+    &__hdg {
+        margin-bottom: $paragraph-margin-bottom;
+        font-family: $body-font-family;
+        font-weight: bold;
+        font-size: rem-calc(24);
+
+        @include breakpoint(medium) {
+            text-align: left;
+        }
+    }
+}
